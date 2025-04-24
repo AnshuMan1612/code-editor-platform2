@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Code Editor Platform
 
-## Getting Started
+A powerful and extensible multi-language code editor built with **Next.js**, **CodeMirror**, and a custom backend that supports real-time code execution, problem switching, and code persistence. Perfect for practicing coding problems with live code execution and test cases.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🎯 Multi-language code support (Python, JavaScript, TypeScript, Go, PHP, Rust, C++)
+- 🧠 Built-in coding problems with problem statements and sample test cases
+- 💾 Auto-saving of code per language and problem
+- 🌙 Light/Dark theme toggle with system preference detection
+- 🧪 Code execution with sample input/output
+- ✅ "Run All Tests" mock functionality
+- 🔁 Next question cycling
+- ⏱️ Problem-solving timer
+
+---
+
+## 📦 Tech Stack
+
+- **Frontend:** React, Next.js App Router (Client Components), Tailwind CSS, CodeMirror 6
+- **Backend:** Next.js API Route using `child_process` for dynamic code execution
+- **Languages Supported:**
+  - Python
+  - JavaScript
+  - TypeScript
+  - Go
+  - PHP
+  - Rust
+  - C++
+
+---
+
+## 🛠️ How to Run Locally
+
+### 1. Clone the Repository
 
 ```bash
+git clone https://github.com/yourusername/code-editor-platform.git
+
+cd code-editor-platform
+```
+2. Install Dependencies
+```
+bash
+Copy
+Edit
+npm install
+# or
+yarn
+```
+3. Run the Development Server
+```
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit http://localhost:3000 to view the app.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✅ Important: Ensure your machine has the following compilers/interpreters installed:
 
-## Learn More
+Python
 
-To learn more about Next.js, take a look at the following resources:
+Node.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Go
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+PHP
 
-## Deploy on Vercel
+Rust (rustc)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+g++ (for C++)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧩 Bonus Features
+💡 Backend dynamically compiles/runs code using temp files and system compilers
+
+🔀 "Next Question" button cycles through built-in problems
+
+🗃 LocalStorage persistence per language & problem
+
+🎨 Auto theme toggle based on system preference
+
+⏱️ Timer to track time spent per problem
+
+
+
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/7bb0be57-1eee-465d-b310-5682dd4518a6" />
+
+
+
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/ccc188c0-48c3-4581-a8c3-71033458acd8" />
+
+
